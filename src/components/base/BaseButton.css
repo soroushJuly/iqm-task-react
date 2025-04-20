@@ -1,0 +1,91 @@
+button {
+    box-sizing: content-box;
+    border: none;
+    border-radius: 100px;
+    padding: 4px;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-weight: 700;
+    min-width: 1rem;
+}
+
+.sm {
+    font-size: 10px;
+    min-width: 0.7rem;
+}
+
+.md {}
+
+.lg {
+    font-size: 18px;
+    min-width: 1.3rem;
+}
+
+.read-only {
+    &.inactive {
+        background-color: var(--inactive-light);
+        color: var(--inactive);
+        border: 1px solid var(--inactive);
+    }
+
+    &.green {
+        background-color: var(--green-light);
+        color: var(--green);
+        border: 1px solid var(--green);
+    }
+
+    &.red {
+        background-color: var(--red-light);
+        color: var(--red);
+        border: 1px solid var(--red);
+    }
+
+    &.disabled {
+        background-color: var(--disabled-light);
+        color: var(--disabled);
+        border: 1px solid var(--disabled);
+    }
+}
+
+.interactive {
+    &.inactive {
+        background-color: var(--inactive);
+        color: var(--white);
+        border: 1px solid var(--inactive);
+
+        &:hover {
+            background-color: var(--inactive-dark);
+            border: 1px solid var(--inactive-dark);
+        }
+    }
+
+    &.green {
+        background-color: var(--green);
+        color: var(--white);
+        border: 1px solid var(--green);
+
+        &:hover {
+            background-color: var(--green-dark);
+            border: 1px solid var(--green-dark);
+        }
+    }
+
+    &.red {
+        background-color: var(--red);
+        color: var(--white);
+        border: 1px solid var(--red);
+
+        &:hover {
+            background-color: var(--red-dark);
+            border: 1px solid var(--red-dark);
+        }
+    }
+
+    &.disabled {
+        background-color: var(--disabled);
+        color: var(--white);
+        border: 1px solid var(--disabled);
+    }
+}

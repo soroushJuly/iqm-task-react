@@ -1,0 +1,5 @@
+.moodlet-container {
+    display: flex;
+    width: max-content;
+    gap: 4px;
+}
