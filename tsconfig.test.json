@@ -1,0 +1,16 @@
+{
+    "extends": "./tsconfig.app.json",
+    "compilerOptions": {
+        "types": [
+            "jest",
+            "node"
+        ],
+        "esModuleInterop": true,
+        "noEmit": false,
+        "outDir": "./dist-test"
+    },
+    "include": [
+        "src/**/*.test.ts",
+        "src/**/*.test.tsx"
+    ]
+}
