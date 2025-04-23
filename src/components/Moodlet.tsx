@@ -1,4 +1,4 @@
-import "./moodlet.css"
+import "./Moodlet.css"
 import MoodletButton from "./MoodletButton"
 
 type MoodletProps = {
